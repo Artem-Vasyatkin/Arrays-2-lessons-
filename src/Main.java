@@ -47,6 +47,9 @@ public class Main {
             if (i > maximumWaste) {
                 maximumWaste = i;
             }
+            if (i < minimumWaste) {
+                minimumWaste = i;
+            }
         }
         System.out.printf("Минимальная сумма трат за неделю составила %s рублей.\n", minimumWaste);
         System.out.printf("Максимальная сумма трат за неделю составила %s рублей.\n", maximumWaste);
@@ -65,19 +68,11 @@ public class Main {
 
         System.out.println("Task4\n");
 
-        char[] NameError = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        char[] nameError = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
 
-        boolean correctView = false;
-        for (int i = NameError.length - 1; i >= 0; i--) {
-            if (NameError[i] == ' ') {
-                correctView = true;
-                continue;
-            }
-            if (correctView) {
-                System.out.print(NameError[i]);
-            } else {
-                System.out.print(NameError[i]);
-            }
+        for (int i = nameError.length - 1; i >= 0; i--) {
+            System.out.print(nameError[i]);
+        }
         }
     }
-    }
+
