@@ -27,5 +27,52 @@ public class Main {
         } else {
             System.out.println("Стелажи разные");
         }
+
+        System.out.println("Homework\n");
+        System.out.println("Task1\n");
+
+        int[] salary = new int[]{50_000, 70_000, 90_000, 100_000, 110_000};
+
+        int  monthlyExpenses = 0;
+        for (int j : salary) {
+            monthlyExpenses += j;
+        }
+        System.out.printf("Сумма трат за месяц составила %s рублей\n", monthlyExpenses);
+
+        System.out.println("Task2\n");
+        int maximumWaste = salary[0];
+        int minimumWaste = salary[0];
+
+        for (int i : salary) {
+            if (i > maximumWaste) {
+                maximumWaste = i;
+            }
+            if (i < minimumWaste) {
+                minimumWaste = i;
+            }
+        }
+        System.out.printf("Минимальная сумма трат за неделю составила %s рублей.\n", minimumWaste);
+        System.out.printf("Максимальная сумма трат за неделю составила %s рублей.\n", maximumWaste);
+
+        System.out.println("Task3\n");
+
+        int[] salaries = {50_000, 70_000, 90_000, 100_000, 110_000};
+
+        int  sumSalary = 0;
+        for (int i : salaries) {
+            sumSalary += i;
+        }
+        double averageSalary = (double) sumSalary / salaries.length;
+        System.out.printf("Средняя сумма трат за месяц " +
+                "составила %s рублей\n", averageSalary);
+
+        System.out.println("Task4\n");
+
+        char[] nameError = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+
+        for (int i = nameError.length - 1; i >= 0; i--) {
+            System.out.print(nameError[i]);
+        }
+        }
     }
-}
+
